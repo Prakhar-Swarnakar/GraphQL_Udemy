@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphQL_Udemy", "GraphQL_Udemy\GraphQL_Udemy.csproj", "{6FCB040C-50D3-4CCD-8AE0-5B583A33C827}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FCB040C-50D3-4CCD-8AE0-5B583A33C827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FCB040C-50D3-4CCD-8AE0-5B583A33C827}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FCB040C-50D3-4CCD-8AE0-5B583A33C827}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FCB040C-50D3-4CCD-8AE0-5B583A33C827}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F45BC6AD-4504-4F1F-9320-985B70869749}
+	EndGlobalSection
+EndGlobal
