@@ -22,7 +22,8 @@ namespace GraphQL_Udemy.Services
                 Price = 10.50 
             },
             new MenuItem() { Id = 3, Name = "Grilled Chi xen Salad", Description = "Fresh garden salad with grilled chicken", Price= 55},
-            new MenuItem() { Id = 4, Name = "Pasta Alfre o", Description = "Creamy Alfredo sauce with fettuccine pasta", Price = 12.55 },
+            new MenuItem() { Id = 4, Name = "Pasta Alfre o", Description = "Creamy Alfredo sauce with fettuccine pasta", Price = 12.55 }
+            ,
             new MenuItem() { Id = 5, Name = "Chocolate Bi wnie Sur ae", Description = "Warm chocolate brownie with ice cream and fudge", Price = 10 }
         };
 
@@ -34,8 +35,7 @@ namespace GraphQL_Udemy.Services
 
         public void DeleteMenuItem(int id)
         {
-            MenuList.RemoveAt(id);
-
+            MenuList.Remove(MenuList.FirstOrDefault(m => m.Id == id));
         }
 
         public List<MenuItem> GetAllMenuItem()
@@ -50,8 +50,12 @@ namespace GraphQL_Udemy.Services
 
         public MenuItem UpdateMenuItem(int id, MenuItem menuItem)
         {
-            MenuList[id] = menuItem;
-            return menuItem;
+            MenuList.Remove(MenuList.FirstOrDefault(m => m.Id == id));
+            MenuList.Add(menuItem);
+            return MenuList.Where(x => x.Id == menuItem.Id).FirstOrDefault();
+            //MenuList.FirstOrDefault(m => m.Id == id)
+            //MenuList[id] = menuItem;
+            //return menuItem;
         } 
        
     }

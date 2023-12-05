@@ -17,7 +17,7 @@ namespace GraphQL_Udemy.Queries
             });
 
             Field<MenuItemType>("MenuItem")
-                .Argument<IntGraphType>("MenuItem")
+                .Arguments(new QueryArguments(new QueryArgument<IntGraphType> { Name = "menuId" }))
                 .Resolve(context =>
                 {
                     return _menuRepository.GetMenuItemById(context.GetArgument<int>("menuId"));

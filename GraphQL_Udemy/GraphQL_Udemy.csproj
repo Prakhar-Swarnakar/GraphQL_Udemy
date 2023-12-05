@@ -7,12 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Mutations\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="graphiql" Version="2.0.0" />
     <PackageReference Include="GraphQL.Server.Transports.AspNetCore" Version="7.6.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.11" />
   </ItemGroup>
 
 </Project>
